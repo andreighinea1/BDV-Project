@@ -1,0 +1,5 @@
+Dataset:
+https://www.kaggle.com/datasets/START-UMD/gtd
+
+GitHub:
+https://github.com/andreighinea1/BDV-Project
