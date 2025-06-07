@@ -1,0 +1,73 @@
+%–––––––––––––––––––––––––––––––––––––––––––––––
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+% ---- PACKAGES ----
+\usepackage{cite}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}       % optional, for clickable references
+\usepackage{subcaption}     % if you need subfigures
+\usepackage{booktabs}       % for nicer tables
+
+% tell LaTeX where to look for figures:
+\graphicspath{{figures/}}
+
+% custom macros (if any)
+% \newcommand{\etal}{\textit{et al.}}
+
+%–– Title & Authors ––
+\begin{document}
+
+\title{Global Terrorism Analysis}
+
+\author{
+  \IEEEauthorblockN{Ghinea Andrei‐Robert\textsuperscript{1} \quad Diaconu Bianca\textsuperscript{2}}
+  \vspace{0.5em}
+  \IEEEauthorblockA{
+    \textsuperscript{1,2}Faculty of Automation \& Computer Science,\\
+    Machine Learning Master's, Year 1,\\
+    Politehnica University of Timișoara, Timișoara, Timiș, Romania\\
+    \{robert.ghinea, bianca.diaconu\}@student.upt.ro
+  }
+}
+
+\maketitle
+
+%–––––––––––––––––––––––––––––––––––––––––––––––
+\begin{abstract}
+This paper uses the Global Terrorism Database (GTD) to explore temporal, geographic, and actor‐level patterns in worldwide terrorist incidents (1970–2017). We present several visualizations (line charts, heatmaps, choropleths, word clouds, etc.) to highlight emerging trends and insights.
+\end{abstract}
+
+\begin{IEEEkeywords}
+terrorism, exploratory data analysis, data visualization, GTD, machine learning
+\end{IEEEkeywords}
+
+%–––––––––––––––––––––––––––––––––––––––––––––––
+\section{Introduction}
+\label{sec:intro}
+\input{sections/introduction.tex}
+
+%–––––––––––––––––––––––––––––––––––––––––––––––
+\section{Data}
+\label{sec:data}
+\input{sections/data.tex}
+
+%–––––––––––––––––––––––––––––––––––––––––––––––
+\section{Results}
+\label{sec:results}
+\input{sections/results.tex}
+
+%–––––––––––––––––––––––––––––––––––––––––––––––
+\section{Discussion \& Conclusions}
+\label{sec:discussion}
+\input{sections/discussion.tex}
+
+%–––––––––––––––––––––––––––––––––––––––––––––––
+\bibliographystyle{IEEEtran}
+\bibliography{refs}
+
+\end{document}
+%–––––––––––––––––––––––––––––––––––––––––––––––

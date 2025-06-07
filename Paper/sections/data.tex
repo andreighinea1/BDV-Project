@@ -1,0 +1,16 @@
+% \section{Data}
+
+The Global Terrorism Database (GTD)~\cite{gtd2018} is an open-source dataset curated by the National Consortium for the Study of Terrorism and Responses to Terrorism (START) at the University of Maryland. For this study, we use the Kaggle release~\cite{kagglegtd} covering incidents from 1970 to 2017 (excluding 1993). The GTD is the world's most comprehensive unclassified database on terrorist attacks, containing systematic data on both domestic and international terrorist events. Each record includes over 100 variables, with key fields such as:
+\begin{itemize}
+    \item \textbf{Date}: year, month, day of incident
+    \item \textbf{Location}: country, region, city
+    \item \textbf{Attack details}: weapon type, attack type, target type
+    \item \textbf{Casualties}: fatalities, injuries
+    \item \textbf{Perpetrator}: group name (if known)
+\end{itemize}
+
+The GTD's data collection methodology has evolved over time: incidents from 1970--1997 were recorded in real time by Pinkerton Global Intelligence Services (PGIS); data for 1998--2007 were gathered retrospectively; and since 2012, collection has benefited from machine learning algorithms and expanded media sources. These methodological improvements—particularly the major updates in 1997, 2008, and 2012—can influence year-to-year comparability. Additionally, because the GTD relies primarily on media reports, underreporting or data gaps may exist for certain periods or regions.
+
+For our analysis, we loaded the GTD CSV file into a Pandas DataFrame, parsed and standardized relevant fields, and handled missing data by treating absent fatality or injury counts as zero when aggregating. Specifically, we extracted only the following columns for this study: \texttt{iyear}, \texttt{imonth}, \texttt{iday}, \texttt{country\_txt}, \texttt{region\_txt}, \texttt{attacktype1\_txt}, \texttt{nkill}, \texttt{nwound}, and \texttt{gname}. Any missing \texttt{nkill} or \texttt{nwound} values were filled with zero prior to computing totals. We also combined \texttt{iyear}, \texttt{imonth}, and \texttt{iday} into a single \texttt{date} column using \texttt{pd.to\_datetime}, coercing invalid or unknown dates to \texttt{NaT}. Finally, we filtered the dataset to include only incidents occurring between January 1, 1970, and December 31, 2017.
+
+All subsequent analysis and visualizations were produced using Python, with core libraries including \texttt{pandas} for data manipulation; \texttt{matplotlib} and \texttt{seaborn} for plotting; \texttt{plotly} for interactive choropleths; and \texttt{wordcloud} for generating country word clouds. The full data pipeline, including preprocessing steps and plotting scripts, is available alongside this report.

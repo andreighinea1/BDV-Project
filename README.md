@@ -11,6 +11,17 @@ and static visualizations to highlight terrorist activity trends across time, re
 
 ---
 
+## Project Paper
+
+A detailed scientific paper documenting the methodology, results, and discussion for this analysis is included in the
+repository:
+
+* [Global Terrorism Analysis.pdf](Paper/Global%20Terrorism%20Analysis.pdf) — *Final report with all figures, findings,
+  and references.*
+* All Overleaf (LaTeX) source files are located in the [Paper](Paper) directory.
+
+---
+
 ## Dependencies
 
 * All required Python packages are listed in [`requirements.txt`](requirements.txt).

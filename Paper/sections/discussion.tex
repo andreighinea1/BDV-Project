@@ -1,0 +1,32 @@
+%–––––––––––––––––––––––––––––––––––––––––––––––
+The above figures reveal several data‐driven insights:
+
+\begin{enumerate}
+  \item \textbf{Global Trend (Fig.~\ref{fig:attacks_per_year}):} 
+    A steady rise in annual attacks from 1970–1989 (2,000–4,000 attacks/year), a lull in the 1990s (<1,000/year), a surge post‐2001 (peaking around 3,000/year in 2003), and an explosive peak near 17,000/year in 2014–2015. By 2017, attack counts declined to about 13,000 as major campaigns lost ground.
+  \item \textbf{Lethality Correlation (Fig.~\ref{fig:corr_attacks_fatalities}):} 
+    There is a very strong linear relationship between the number of attacks and fatalities per year, with notable outlier years that saw exceptionally deadly campaigns relative to attack volume.
+  \item \textbf{Seasonality (Fig.~\ref{fig:monthly_seasonality}):} 
+    Attacks are most frequent in May–July (peaks near 17k), and least frequent in December (about 13.5k), suggesting global patterns influenced by operational or environmental factors.
+  \item \textbf{Country Concentration (Fig.~\ref{fig:wordcloud_countries} \& Fig.~\ref{fig:choropleth_countries}):} 
+    A small set of countries—Pakistan, Afghanistan, Iraq, and Colombia—account for about half of all attacks. Iraq (~23k), Pakistan (~18k), and Afghanistan (~15k) are most affected, while India, Nigeria, and Colombia are notable but smaller hotspots.
+  \item \textbf{Regional Dynamics (Fig.~\ref{fig:heatmap_regions} \& Fig.~\ref{fig:avg_attacks_region}):} 
+    MENA and South Asia stand out for the highest long‐term averages (~1,100 and ~950 attacks/year). MENA peaked in 2014–2015, South Asia in 2012–2014, Sub‐Saharan Africa rose sharply post‐2005, and South America’s activity faded after its 1980s peak.
+  \item \textbf{Group Evolution (Fig.~\ref{fig:top10_groups} \& Fig.~\ref{fig:bubble_top5}):} 
+    A few groups—Taliban (~7,300 attacks) and ISIS (~5,500)—dominate the top ten, with Shining Path (~4,500) and FMLN (~3,200) reflecting 1980s Latin America. Al‐Shabaab (~3,200) rose rapidly from 2010–2014. Each top group operates in a distinct region and timeframe.
+\end{enumerate}
+
+\noindent
+\textbf{Data‐Science Perspective:}  
+The GTD visualizations show that different conflicts dominated global terrorism sequentially rather than in parallel. Attack volume is a strong predictor of fatalities, with a few high-lethality years as exceptions. Seasonality is consistent across regions, with operational peaks in late spring and early summer. The concentration of incidents in a handful of countries and regions suggests that targeted interventions may yield a substantial global impact.
+
+\vspace{1em}
+\noindent
+\textbf{Novelty and Comparison:}  
+While previous research has focused on narrower time spans or regions, our approach combines comprehensive data visualization methods—such as continuous heatmaps, group-level timelines, and global maps—to provide an integrated view of long-term, global terrorism patterns.
+
+\vspace{1em}
+\noindent
+\textbf{Limitations and Future Directions:}  
+The GTD relies on media reporting, so early decades and certain regions may be undercounted. Changes in methodology (notably in 1997, 2008, and 2012) can impact comparability. We treat missing data as zero for most analyses; future work could address gaps more robustly or apply network analysis and geographic clustering to explore additional patterns.
+%–––––––––––––––––––––––––––––––––––––––––––––––
