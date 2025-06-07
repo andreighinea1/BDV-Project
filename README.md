@@ -50,4 +50,4 @@ and static visualizations to highlight terrorist activity trends across time, re
 
 ## License
 
-For academic and educational use only.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
