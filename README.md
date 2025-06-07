@@ -2,7 +2,7 @@
 
 **Exploratory data analysis of the Global Terrorism Database (1970–2017) with interactive and static Python visualizations.**
 
-**Course:** Machine Learning (M1, S2)  
+**Course:** Big Data Visualization, Machine Learning MSc, Semester 2  
 **Team:** **_Ghinea Andrei-Robert_** & **_Diaconu Bianca_**  
 **Dataset:** [Global Terrorism Database (GTD)](https://www.kaggle.com/datasets/START-UMD/gtd)
 
